@@ -3,7 +3,6 @@ from typing import Literal, Optional
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 import pickle
-from mangum import Mangum
 import pandas as pd
 # -------------------- Load ML Model --------------------
 with open("diabetes_model.pkl", "rb") as f:
@@ -106,4 +105,5 @@ def predict(data: DiabetesInput):
     prob = model.predict_proba(df)[0][1]
 
     return {"probability": round(float(prob), 4)}
-handler = Mangum(app)
+
+ 
