@@ -1,14 +1,14 @@
-pip>=25.3
-setuptools>=68.0
-wheel>=0.45
-numpy>=1.25.2,<2.0
-pandas>=2.2.3,<3.0
-scikit-learn>=1.6.1,<2.0
-catboost>=1.2.8,<2.0
-fastapi>=0.118.0,<0.120
-uvicorn>=0.37.0,<1.0
-pydantic>=2.11.7,<3.0
-pydantic-core>=2.33.2,<3.0
-joblib>=1.4.2,<2.0
-python-dotenv>=1.0.1,<2.0
+fastapi==0.118.0
+uvicorn==0.37.0
+
+pydantic==2.11.7
+pydantic-core==2.33.2
+
+pandas==2.2.3
+scikit-learn==1.6.1
+
+catboost==1.2.8
+joblib==1.4.2
+
+python-dotenv==1.0.1
 
