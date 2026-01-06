@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "API_URL = "http://localhost:8000/predict"
+API_URL = "http://localhost:8000/predict"
 
 st.set_page_config(page_title="Diabetes Probability Predictor", layout="centered")
 st.title("🩺 Diabetes Probability Predictor")
@@ -99,5 +99,6 @@ if st.button("Predict Diabetes Probability"):
             st.error(f"API Error: {response.text}")
     except Exception as e:
         st.error(f"Connection error: {e}")
+
 
 
